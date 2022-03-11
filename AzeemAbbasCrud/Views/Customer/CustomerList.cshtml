@@ -1,0 +1,17 @@
+﻿@model IEnumerable<AzeemAbbasCrud.Models.Customer>
+@{
+}
+<table class="table table-bordered">
+    <tr>
+        <th> Name</th>
+        <th> phone</th>
+
+    </tr>
+    @foreach (var Cust in Model)
+    {
+        <tr>
+            <td> @Cust.Name </td>
+            <td>@Cust.phone </td>
+        </tr>
+    }
+</table>
